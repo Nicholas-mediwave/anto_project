@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,400&display=swap');
 
-*{
+body{
   background-color: #F2F2F2;
   box-sizing: border-box;
   margin: 0;
@@ -13,14 +13,14 @@ header {
     display: flex;
     justify-content: flex-end;
     height: 90px;
-    padding: 32px 25px;
-    border-bottom: 2px solid #00B158;
+    padding: 0 25px;
+    align-items: center;
+    border-bottom: 3.5px solid #00B158;
 }
 
 .logo {
     cursor: pointer;
     margin-right: auto;
-    margin-top: -20px;
     background: #FFFFFF;
     margin-left: 134px;
     width: 133px;
@@ -29,16 +29,16 @@ header {
 
 nav{
   margin-right: 163px;
-  background-color: #FFFFFF;
+  
 }
 
 nav ul li{
-    background-color: #FFFFFF;
+    
     display: inline-block;
   }
 
 nav ul li a{
-    background-color: #FFFFFF;
+    
     font-family: 'Poppins', sans-serif;
     color: #363636;
     font-size: 18px;
@@ -59,7 +59,6 @@ a.active, a:hover{
   background-image: url(img/Group\ 22@2x.png);
   cursor: pointer;
   margin-right: 40px;
-  color: #FFFFFF;
   width: 26px;
   height: 20px;
   display: none;
@@ -84,6 +83,7 @@ a.active, a:hover{
    
 
 }
+
 .hero-text {
   
   font-family: 'Poppins', sans-serif;
@@ -96,9 +96,50 @@ a.active, a:hover{
   background-color: rgba(0,0,0, 0.0);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -80%);
 }
 
+.box{
+	width: 580px;
+	height: 50px;
+	background-color: #F2F2F2;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	padding-left: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+   
+}
+
+.searchInput{
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 14px ;
+    background-color: #F2F2F2;
+    width: 500px;
+    height: 50px;
+    border-radius: 30px;
+    border: 0;
+	  outline: none;
+}
+
+.searchIcon{
+
+    cursor: pointer;
+    margin-right: 40px;
+    color: #F2F2F2;
+    width: 26px;
+    height: 20px;
+    width: 23.01px;
+    height: 23.01px;
+    margin-right: 24.99px;
+    float: right;
+
+}
 
 .text-h1{
   font-family: 'Poppins', SemiBold;
@@ -131,25 +172,38 @@ a.active, a:hover{
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  float: right;
   font-size: 16px;
   cursor: pointer;
+  float: right;
+  position: static;
+
 }
 
+@media (max-width: 1458px){
 
+  .hero-text {
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+  }
+
+}
 
 @media (max-width: 758px){
   .checkbtn{
     background-image: url(img/Group\ 22.png);
     display: block;
+    margin-right: 10px;
   }
   ul{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #2c3e50;float: right;
+    float: right;
     top: 80px;
     left: -100%;
+    display: none;
     text-align: center;
     transition: all .5s;
   }
@@ -167,7 +221,7 @@ a.active, a:hover{
   }
 
   .hero-text {
-    font-size: 40px ;
+    font-size: 35px ;
  
   }
 
@@ -176,12 +230,49 @@ a.active, a:hover{
      width: 187px;
      height: 45px;
      text-align: center;
+     margin-top: 15px;
+     top: 50%;
+     left: 50%;
+     transform: translate(-35%, -1%);
+     transition: all .5s;
+  }
 
+  .box{
+    width: 378px;
+    transition: all .5s;
   }
   
   
 }
 
+@media (max-width: 458px){
+
+  .checkbtn{
+    background-image: url(img/Group\ 22.png);
+    display: block;
+    margin-right: 15px;
+    align-items: center;
+  }
+
+  .logo{
+    margin-left: 10px;
+    align-items: center;
+  }
+
+
+  .nav{
+    margin: 0%;
+    width: 0%;
+  }
+
+  .button{
+    margin-top: 11px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -1%);
+    transition: all .5s;
+  }
+}
 
 
 
